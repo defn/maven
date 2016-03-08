@@ -4,7 +4,7 @@ function main {
   local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
   source "$shome/script/profile"
 
-  if [[ -x "$(type -P maven)" ]]; then
+  if [[ -x "$(type -P mvn)" ]]; then
     return 1
   fi
 
